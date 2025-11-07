@@ -246,7 +246,7 @@ section {
 
   /* HEADER */
   .header--container{
-    background-image: url('Header--img-unsplash.jpg');
+    background-image: url('Header--img-unsplash.webp');
     width: 100%;
     height: 80vh;
     background-size: cover;
