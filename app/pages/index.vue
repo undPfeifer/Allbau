@@ -246,7 +246,7 @@ section {
 
   /* HEADER */
   .header--container{
-    background-image: url('Header--img-unsplash.webp');
+    background-image: url('/Users/dimi_personal/Dropbox (Privat)/Agentur/Kunden/Allbau GmbH/_Website/allbau-website/public/Header--img-unsplash.webp');
     width: 100%;
     height: 80vh;
     background-size: cover;
@@ -269,6 +269,10 @@ section {
 @media (max-width: 800px) { 
   .base--flex {
     flex-direction: column;
+  }
+
+  section {
+    padding: 60px 2vw;
   }
 
   .header--container  {
