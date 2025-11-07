@@ -33,7 +33,7 @@ section {
     flex-direction: row;
     width: fit-content;
 
-    bottom: 0px;
+    bottom: -20px;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);

@@ -290,13 +290,24 @@ section {
     padding: 60px 2vw;
   }
 
-  .header--container  {
-
+  body {
+    padding: 0px;
   }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    top: 50px;
+  }
+
+
 
   .header--text_container {
     font-size: 40px;
     position: relative;
+    text-align: center;
   }
   
 }
