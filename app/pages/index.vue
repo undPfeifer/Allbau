@@ -82,6 +82,12 @@ const list = [
       <section>
         <p> <span class="yellow"> Nach jahrelanger praktischer Arbeitserfahrung</span> in verschiedenen Unternehmen, wurde es Zeit, eigenständige Wege zu gehen. Und das miteinander.</p>
       </section>
+      <section>
+        <Gallery />
+        <p>  </p>
+      </section>
+
+
 
 
 
@@ -236,17 +242,26 @@ section {
     background-color: #8D8F97;
   }
 
-  .shaded{
+  .shaded {
+    letter-spacing: -1px;
     text-shadow: -6px 6px black;
     color: white;
+    -webkit-text-stroke: 2px black; /* width and color of the outline */
+    /* Optional fallback for Firefox using text-shadow for outline */
+    text-shadow: 
+        1px 1px 0 black,  
+        1px 1px 0 black,
+        1px 1px 0 black,
+        1px 1px 0 black,
+        -5px 6px black; /* keep your original shadow if desired */
+}
 
-  }
 
 
 
   /* HEADER */
   .header--container{
-    background-image: url('/public/Header--img-unsplash.webp');
+    background-image: url('/assets/images/Header--img-unsplash.webp');
     width: 100%;
     height: 80vh;
     background-size: cover;

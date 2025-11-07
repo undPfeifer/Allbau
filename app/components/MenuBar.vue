@@ -29,10 +29,17 @@ section {
     opacity: 1;
     position: fixed;
 
-    bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
     padding: 8px;
     border-radius: 12px;
-    display: flex;
     gap: 12px;
 
     transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
