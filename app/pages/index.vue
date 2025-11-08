@@ -18,6 +18,12 @@ const list = [
   'Küchenbau', 'Keramik' , 'Naturstein' , 'Parkett' , 'Vinyl' , 'rennovationen' , 'Gartenarbeiten' ,
   'Entsorgungen' , 'Räumungen' , 'Hauswartungen' , 'Warenhandel'
 ]
+
+
+
+
+
+
 </script>
 
 <template>
@@ -76,6 +82,7 @@ const list = [
             
             <p class=" black"> <span class="white"> Geschäftspartner und Brüder. </span> Das Gesicht hinter dem Unternehmen sind Alain und Yuri Legena</p>
             <p class="sans black">Zwar besteht die GmbH erst seit 2021, als Geschwister begleiten wir uns aber schon ein Leben lang. </p>
+            <Button @click="togglePopUp()" value="Kontakt"/>
           </div>
         </div>
       </section>
@@ -99,6 +106,9 @@ const list = [
 
     
 
+    <Impressum />
+
+    <KontaktPopUp />
 
 
   </div>
@@ -263,11 +273,10 @@ section {
     -webkit-text-stroke: 2px black; /* width and color of the outline */
     /* Optional fallback for Firefox using text-shadow for outline */
     text-shadow: 
-        1px 1px 0 black,  
-        1px 1px 0 black,
-        1px 1px 0 black,
-        1px 1px 0 black,
-        -5px 6px black; /* keep your original shadow if desired */
+        1px -1px 0 black,  
+        -1px 1px 0 black,  
+
+        -5px 6px rgb(0, 0, 0); /* keep your original shadow if desired */
 }
 
 
