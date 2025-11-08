@@ -31,6 +31,7 @@ const list = [
 
         <h1> Ihr Traum</h1> <h1 class="yellow">unser <span class="shaded">projekt</span></h1>
       </div>
+      <svg class="down--arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M12 3l0 17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M12 21l7 -7M12 21l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg>        
     </div>
 
 
@@ -43,7 +44,7 @@ const list = [
             </p>
       
           </section>
-          <img src="/living-room-unsplash.jpg" alt="" style="max-height: 90vh; width: 100%; object-fit: cover; object-position: 0px;">
+          <img src="/kitchen-01.webp" alt="" style="max-height: 90vh; width: 100%; object-fit: cover; object-position: 0px;">
 
     </div>
 
@@ -69,7 +70,7 @@ const list = [
       <section class="grey--blue_bg"> 
         <h2>Wer Wir <br><span class="shaded">sind</span></h2>
         <div class="base--flex"> 
-          <img src="/living_02_un.jpg" alt="">
+          <img src="/garden.jpeg" alt="">
 
           <div class="base--flex vert"> 
             
@@ -104,6 +105,19 @@ const list = [
 </template>
 
 <style>
+
+/* buttons */ 
+
+.down--arrow{
+  color: white;
+  padding: 8px;
+  border-radius: 10000px;
+  border: 2px solid white;
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  bottom: 12px;
+}
 
 /* GLOBAL BASE STYLES */
 img {
@@ -267,6 +281,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
+    position: relative;
     
     display: flex;
     align-items: center;
