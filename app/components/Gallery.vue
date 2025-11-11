@@ -4,9 +4,10 @@ import { ref, onMounted } from 'vue';
 const images = ref<string[]>([]);
 
 onMounted(async () => {
-  const { data } = await useFetch('/api/gallery');
-  images.value = data.value || [];
+  const res = await $fetch('/api/gallery');
+  images.value = res || [];
 });
+
 </script>
 
 <template>

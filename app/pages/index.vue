@@ -92,12 +92,12 @@ const list = {
             <p class=" black"> <span class="white"> Geschäftspartner und Brüder. </span> Das Gesicht hinter dem Unternehmen sind Alain und Yuri Legena</p>
             <p class="sans black">Zwar besteht die GmbH erst seit 2021, als Geschwister begleiten wir uns aber schon ein Leben lang. </p>
             <!--  <Button @click="togglePopUp()" value="Kontakt"/> -->
+            <p> <span class="yellow"> Nach jahrelanger praktischer Arbeitserfahrung</span> in verschiedenen Unternehmen, wurde es Zeit, eigenständige Wege zu gehen. Und das miteinander.</p>
           </div>
         </div>
       </section>
 
       <section>
-        <p> <span class="yellow"> Nach jahrelanger praktischer Arbeitserfahrung</span> in verschiedenen Unternehmen, wurde es Zeit, eigenständige Wege zu gehen. Und das miteinander.</p>
       </section>
       <section>
         <Gallery />
