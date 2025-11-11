@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue'
 
-const images = ref<string[]>([]);
+const images = ref<string[]>([])
 
-onMounted(async () => {
-  const res = await $fetch('/api/gallery');
-  images.value = res || [];
-});
-
+if (process.client) {
+  const res = await fetch('/gallery.json').then(r => r.json())
+  images.value = res
+}
 </script>
+
 
 <template>
   <div class="gallery-grid">
