@@ -28,6 +28,7 @@ section {
     background-color: black;
     opacity: 1;
     position: fixed;
+    z-index: 9999999;
 
     display: flex;
     flex-direction: row;

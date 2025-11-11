@@ -14,10 +14,13 @@ const { data: servicesPost } = await useFetch(baseUrl, {
 })
 
 
-const list = [
-  'Küchenbau', 'Keramik' , 'Naturstein' , 'Parkett' , 'Vinyl' , 'rennovationen' , 'Gartenarbeiten' ,
+const list = {
+  main: ['Komplett Rennovationen & Umbau'],
+  secondary:
+  [
+  'Gartenarbeiten' ,
   'Entsorgungen' , 'Räumungen' , 'Hauswartungen' , 'Warenhandel'
-]
+]}
 
 
 
@@ -67,10 +70,16 @@ const list = [
                 <div>
 
                   <div class="list--container">
-            <div class="list--item" v-for="item in list" :key="item">{{ item }}</div>
+            <div class="list--item main" v-for="item in list.main" :key="item">{{ item }}</div>
+            <div class="list--item" v-for="item in list.secondary" :key="'seconday-'+item">{{ item }}</div>
             </div>
 
-                </div>
+            
+            
+            
+          </div>
+          
+          <p>Wir bieten Ihnen <span class="yellow">das Komplettpaket</span> an.</p>
               </section>
 
       <section class="grey--blue_bg"> 
@@ -82,7 +91,7 @@ const list = [
             
             <p class=" black"> <span class="white"> Geschäftspartner und Brüder. </span> Das Gesicht hinter dem Unternehmen sind Alain und Yuri Legena</p>
             <p class="sans black">Zwar besteht die GmbH erst seit 2021, als Geschwister begleiten wir uns aber schon ein Leben lang. </p>
-            <Button @click="togglePopUp()" value="Kontakt"/>
+            <!--  <Button @click="togglePopUp()" value="Kontakt"/> -->
           </div>
         </div>
       </section>
@@ -235,12 +244,23 @@ flex-wrap: wrap;
   font-size: 20px;
 
   padding: 2px;
+  line-height: 1;
 
 
 
 
 }
 
+
+.list--item.main{
+  width: fit-content;
+  font-size: 26px;
+  background-color: black;
+  color: white;
+  padding: 6px;
+  font-weight: bold;
+  border: 1px solid white;
+}
 
 
 body {

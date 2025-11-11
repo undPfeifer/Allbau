@@ -18,6 +18,7 @@
 
 .logo{
   width: 200px;
+  z-index: 10000;
 }
 
 </style>

@@ -1,20 +1,20 @@
 
 <template>
     <section>
+        
+        <div class="address">
+          <p>Lindenbergstrasse 4</p>
+              <p>8630 Rüti</p>
+              <p>079 599 33 36</p>
+              <p>allbau.a@bluewin.ch</p>
+              <p>Allbauprojekt GmbH</p>
+          </div>
         <div class="vert-flex">
             <!--  <p class="bold">impressum</p>  --> 
             <p>umsetzung <span>✑</span> </p>
             <p>  &   </p>
             <p>webdesign <span>☞</span> <a href="https://www.undpfeifer.ch" class="undpfeifer"> &pfeifer</a></p>
         </div>
-        
-        <div class="address">
-          <p>Uznacherstrasse 79</p>
-              <p>8722 Kaltbrunn</p>
-              <p>079 599 33 36</p>
-              <p>allbau.a@bluewin.ch</p>
-              <p>Allbauprojekt GmbH</p>
-          </div>
     </section>
     
   </template>
@@ -82,6 +82,12 @@
     font-style: italic;
     font-size: 14px;
     font-weight: bold;
+  }
+
+  @media (max-width:800px) {
+    section {
+        flex-direction: column;
+    }
   }
   
   </style>
